@@ -25,7 +25,7 @@
         <quarkus.core.extention.version>7.1.0</quarkus.core.extention.version>
         <sonar.coverage.jacoco.xmlReportPaths>${project.basedir}/../aggregator-for-jacoco/target/jacoco-ut/jacoco.xml
         </sonar.coverage.jacoco.xmlReportPaths>
-        <surefire-plugin.version>3.3.0</surefire-plugin.version>
+        <surefire-plugin.version>3.5.3</surefire-plugin.version>
         <jandex-maven-plugin.version>3.1.8</jandex-maven-plugin.version>
     </properties>
 
