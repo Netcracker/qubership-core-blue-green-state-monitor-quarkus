@@ -41,6 +41,7 @@ public class BlueGreenStateMonitorProcessor {
                 log.info("Enabled ConsulBlueGreenMicroserviceMutexConfiguration");
             }
         }
+        builder.addBeanClass(BGStateSubscriberConfiguration.class);
         return builder.setUnremovable().build();
     }
 
