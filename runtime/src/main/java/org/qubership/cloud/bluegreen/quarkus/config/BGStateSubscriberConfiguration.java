@@ -18,19 +18,19 @@ import org.qubership.cloud.bluegreen.api.service.BlueGreenStatePublisher;
  * </p>
  *
  * <p>
- * This system property (key: {@code "bgState"}) can be used by logging frameworks or other components
+ * This system property (key: {@code "BG_STATE"}) can be used by logging frameworks or other components
  * that require access to the current deployment state but are not directly integrated with the
  * Blue-Green infrastructure.
  * </p>
  *
  * <p>Example usage in {@code application.properties}:</p>
  * <pre>{@code
- * quarkus.log.console.format=[%d{yyyy-MM-dd'T'HH:mm:ss.SSS}][%-5p] [bgState:%#{bgState:unknown}] %s%e%n
+ * quarkus.log.console.format=[%d{yyyy-MM-dd'T'HH:mm:ss.SSS}][%-5p] [bg-state:%#{BG_STATE:unknown}] %s%e%n
  * }</pre>
  */
 @ApplicationScoped
 public class BGStateSubscriberConfiguration {
-    public static final String BG_STATE_SYSTEM_PROPERTY_KEY = "bgState";
+    public static final String BG_STATE_SYSTEM_PROPERTY_KEY = "BG_STATE";
     private static final Logger log = Logger.getLogger(BGStateSubscriberConfiguration.class);
 
     @Inject
@@ -38,7 +38,7 @@ public class BGStateSubscriberConfiguration {
 
     void onStart(@Observes StartupEvent ev) {
         if (blueGreenStatePublisher != null) {
-            log.info("Subscribe to BlueGreenState change event => store BlueGreenState to the 'bgState' System property");
+            log.info("Subscribe to BlueGreenState change event => store BlueGreenState to the 'BG_STATE' System property");
             blueGreenStatePublisher.subscribe(this::setBGStateToSystemProperties);
         } else {
             log.warn("Cannot get BlueGreenStatePublisher bean -> skip subscription");
