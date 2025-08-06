@@ -39,7 +39,13 @@ public class BGStateSubscriberConfiguration {
     void onStart(@Observes StartupEvent ev) {
         if (blueGreenStatePublisher != null) {
             log.info("Subscribe to BlueGreenState change event => store BlueGreenState to the 'BG_STATE' System property");
-            blueGreenStatePublisher.subscribe(this::setBGStateToSystemProperties);
+            try {
+                blueGreenStatePublisher.subscribe(this::setBGStateToSystemProperties);
+            }
+            catch (Exception e) {
+                log.error("Cannot subscribe to BlueGreenStatePublisher for propagate Blue Green State to system properties " +
+                          "=> 'BG_STATE' system property will be unavailable in logs", e);
+            }
         } else {
             log.warn("Cannot get BlueGreenStatePublisher bean -> skip subscription");
         }
