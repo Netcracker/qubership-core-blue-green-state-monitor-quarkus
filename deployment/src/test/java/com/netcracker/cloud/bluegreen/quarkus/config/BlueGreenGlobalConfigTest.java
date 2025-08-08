@@ -1,8 +1,8 @@
 package com.netcracker.cloud.bluegreen.quarkus.config;
 
 
-import org.qubership.cloud.bluegreen.api.service.GlobalMutexService;
-import org.qubership.cloud.bluegreen.quarkus.deployment.BlueGreenStateMonitorProcessor;
+import com.netcracker.cloud.bluegreen.api.service.GlobalMutexService;
+import com.netcracker.cloud.bluegreen.quarkus.deployment.BlueGreenStateMonitorProcessor;
 import io.quarkus.test.QuarkusUnitTest;
 import jakarta.inject.Inject;
 import org.jboss.shrinkwrap.api.ShrinkWrap;

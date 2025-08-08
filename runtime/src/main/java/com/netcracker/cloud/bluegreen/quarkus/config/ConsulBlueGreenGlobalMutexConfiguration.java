@@ -1,8 +1,8 @@
 package com.netcracker.cloud.bluegreen.quarkus.config;
 
-import org.qubership.cloud.bluegreen.api.service.GlobalMutexService;
-import org.qubership.cloud.bluegreen.impl.service.ConsulGlobalMutexService;
-import org.qubership.cloud.consul.provider.common.TokenStorage;
+import com.netcracker.cloud.bluegreen.api.service.GlobalMutexService;
+import com.netcracker.cloud.bluegreen.impl.service.ConsulGlobalMutexService;
+import com.netcracker.cloud.consul.provider.common.TokenStorage;
 import io.quarkus.arc.DefaultBean;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.enterprise.inject.Produces;

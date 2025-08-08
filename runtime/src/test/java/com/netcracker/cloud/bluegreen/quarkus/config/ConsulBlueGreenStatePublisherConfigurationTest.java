@@ -2,9 +2,9 @@ package com.netcracker.cloud.bluegreen.quarkus.config;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.qubership.cloud.bluegreen.api.service.BlueGreenStatePublisher;
-import org.qubership.cloud.bluegreen.impl.service.ConsulBlueGreenStatePublisher;
-import org.qubership.cloud.consul.provider.common.TokenStorage;
+import com.netcracker.cloud.bluegreen.api.service.BlueGreenStatePublisher;
+import com.netcracker.cloud.bluegreen.impl.service.ConsulBlueGreenStatePublisher;
+import com.netcracker.cloud.consul.provider.common.TokenStorage;
 
 import static org.junit.jupiter.api.Assertions.assertInstanceOf;
 import static org.junit.jupiter.api.Assertions.assertNotNull;

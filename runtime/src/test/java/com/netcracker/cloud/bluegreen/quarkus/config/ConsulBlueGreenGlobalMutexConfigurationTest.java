@@ -2,9 +2,9 @@ package com.netcracker.cloud.bluegreen.quarkus.config;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.qubership.cloud.bluegreen.api.service.GlobalMutexService;
-import org.qubership.cloud.bluegreen.impl.service.ConsulGlobalMutexService;
-import org.qubership.cloud.consul.provider.common.TokenStorage;
+import com.netcracker.cloud.bluegreen.api.service.GlobalMutexService;
+import com.netcracker.cloud.bluegreen.impl.service.ConsulGlobalMutexService;
+import com.netcracker.cloud.consul.provider.common.TokenStorage;
 
 import java.time.Duration;
 import java.util.List;

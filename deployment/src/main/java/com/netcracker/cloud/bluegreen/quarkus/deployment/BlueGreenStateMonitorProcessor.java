@@ -4,7 +4,7 @@ import io.quarkus.arc.deployment.AdditionalBeanBuildItem;
 import io.quarkus.deployment.annotations.BuildStep;
 import io.quarkus.deployment.builditem.FeatureBuildItem;
 import org.jboss.logging.Logger;
-import org.qubership.cloud.bluegreen.quarkus.config.*;
+import com.netcracker.cloud.bluegreen.quarkus.config.*;
 
 public class BlueGreenStateMonitorProcessor {
 

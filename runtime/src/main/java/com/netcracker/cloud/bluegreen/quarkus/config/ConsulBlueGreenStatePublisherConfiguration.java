@@ -1,8 +1,8 @@
 package com.netcracker.cloud.bluegreen.quarkus.config;
 
-import org.qubership.cloud.bluegreen.api.service.BlueGreenStatePublisher;
-import org.qubership.cloud.bluegreen.impl.service.ConsulBlueGreenStatePublisher;
-import org.qubership.cloud.consul.provider.common.TokenStorage;
+import com.netcracker.cloud.bluegreen.api.service.BlueGreenStatePublisher;
+import com.netcracker.cloud.bluegreen.impl.service.ConsulBlueGreenStatePublisher;
+import com.netcracker.cloud.consul.provider.common.TokenStorage;
 import io.quarkus.arc.DefaultBean;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.enterprise.inject.Disposes;

@@ -2,15 +2,15 @@ package com.netcracker.cloud.bluegreen.quarkus.config;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.qubership.cloud.bluegreen.api.model.BlueGreenState;
-import org.qubership.cloud.bluegreen.api.model.State;
-import org.qubership.cloud.bluegreen.api.model.Version;
-import org.qubership.cloud.bluegreen.api.service.BlueGreenStatePublisher;
-import org.qubership.cloud.bluegreen.api.service.GlobalMutexService;
-import org.qubership.cloud.bluegreen.api.service.MicroserviceMutexService;
-import org.qubership.cloud.bluegreen.impl.service.InMemoryBlueGreenStatePublisher;
-import org.qubership.cloud.bluegreen.impl.service.InMemoryGlobalMutexService;
-import org.qubership.cloud.bluegreen.impl.service.InMemoryMicroserviceMutexService;
+import com.netcracker.cloud.bluegreen.api.model.BlueGreenState;
+import com.netcracker.cloud.bluegreen.api.model.State;
+import com.netcracker.cloud.bluegreen.api.model.Version;
+import com.netcracker.cloud.bluegreen.api.service.BlueGreenStatePublisher;
+import com.netcracker.cloud.bluegreen.api.service.GlobalMutexService;
+import com.netcracker.cloud.bluegreen.api.service.MicroserviceMutexService;
+import com.netcracker.cloud.bluegreen.impl.service.InMemoryBlueGreenStatePublisher;
+import com.netcracker.cloud.bluegreen.impl.service.InMemoryGlobalMutexService;
+import com.netcracker.cloud.bluegreen.impl.service.InMemoryMicroserviceMutexService;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertInstanceOf;

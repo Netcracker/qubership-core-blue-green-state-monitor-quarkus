@@ -1,8 +1,8 @@
 package com.netcracker.cloud.bluegreen.quarkus.config;
 
 
-import org.qubership.cloud.bluegreen.impl.http.HttpClientAdapter;
-import org.qubership.cloud.consul.provider.common.TokenStorage;
+import com.netcracker.cloud.bluegreen.impl.http.HttpClientAdapter;
+import com.netcracker.cloud.consul.provider.common.TokenStorage;
 import jakarta.enterprise.context.ApplicationScoped;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.Assertions;
