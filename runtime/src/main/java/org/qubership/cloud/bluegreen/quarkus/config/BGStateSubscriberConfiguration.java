@@ -25,7 +25,7 @@ import org.qubership.cloud.bluegreen.api.service.BlueGreenStatePublisher;
  *
  * <p>Example usage in {@code application.properties}:</p>
  * <pre>{@code
- * quarkus.log.console.format=[%d{yyyy-MM-dd'T'HH:mm:ss.SSS}][%-5p] [bg-state:%#{BG_STATE:unknown}] %s%e%n
+ * quarkus.log.console.format=[%d{yyyy-MM-dd'T'HH:mm:ss.SSS}][%-5p] [bg_state:%#{BG_STATE:\-}] %s%e%n
  * }</pre>
  */
 @ApplicationScoped
