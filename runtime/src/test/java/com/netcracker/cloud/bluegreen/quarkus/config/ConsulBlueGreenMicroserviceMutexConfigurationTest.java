@@ -1,4 +1,4 @@
-package org.qubership.cloud.bluegreen.quarkus.config;
+package com.netcracker.cloud.bluegreen.quarkus.config;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -58,7 +58,7 @@ class ConsulBlueGreenMicroserviceMutexConfigurationTest {
 
     @Test
     void testCloseWithAutoCloseableService() throws Exception {
-        MicroserviceMutexService service = mock(MicroserviceMutexService.class, 
+        MicroserviceMutexService service = mock(MicroserviceMutexService.class,
             withSettings().extraInterfaces(AutoCloseable.class));
 
         configuration.close(service);

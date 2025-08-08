@@ -1,4 +1,4 @@
-package org.qubership.cloud.bluegreen.quarkus.config;
+package com.netcracker.cloud.bluegreen.quarkus.config;
 
 import io.quarkus.runtime.annotations.ConfigItem;
 import io.quarkus.runtime.annotations.ConfigPhase;

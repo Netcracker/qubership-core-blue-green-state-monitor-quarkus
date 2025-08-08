@@ -1,4 +1,4 @@
-package org.qubership.cloud.bluegreen.quarkus.config;
+package com.netcracker.cloud.bluegreen.quarkus.config;
 
 import org.qubership.cloud.bluegreen.api.service.BlueGreenStatePublisher;
 import org.qubership.cloud.bluegreen.impl.service.ConsulBlueGreenStatePublisher;

@@ -1,4 +1,4 @@
-package org.qubership.cloud.bluegreen.quarkus.config;
+package com.netcracker.cloud.bluegreen.quarkus.config;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

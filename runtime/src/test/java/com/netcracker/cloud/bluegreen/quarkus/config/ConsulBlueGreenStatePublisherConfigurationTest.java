@@ -1,4 +1,4 @@
-package org.qubership.cloud.bluegreen.quarkus.config;
+package com.netcracker.cloud.bluegreen.quarkus.config;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -47,11 +47,11 @@ class ConsulBlueGreenStatePublisherConfigurationTest {
 
     @Test
     void shouldClosePublisherWhenItImplementsAutoCloseable() throws Exception {
-        BlueGreenStatePublisher publisher = mock(BlueGreenStatePublisher.class, 
+        BlueGreenStatePublisher publisher = mock(BlueGreenStatePublisher.class,
             withSettings().extraInterfaces(AutoCloseable.class));
 
         configuration.close(publisher);
 
         verify((AutoCloseable) publisher).close();
     }
-} 
+}

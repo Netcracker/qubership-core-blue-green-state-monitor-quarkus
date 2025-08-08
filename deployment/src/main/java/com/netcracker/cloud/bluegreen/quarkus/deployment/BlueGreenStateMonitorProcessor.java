@@ -1,4 +1,4 @@
-package org.qubership.cloud.bluegreen.quarkus.deployment;
+package com.netcracker.cloud.bluegreen.quarkus.deployment;
 
 import io.quarkus.arc.deployment.AdditionalBeanBuildItem;
 import io.quarkus.deployment.annotations.BuildStep;
