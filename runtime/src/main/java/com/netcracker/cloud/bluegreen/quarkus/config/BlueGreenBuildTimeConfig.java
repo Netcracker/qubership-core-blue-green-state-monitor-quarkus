@@ -6,7 +6,7 @@ import io.smallrye.config.ConfigMapping;
 import io.smallrye.config.WithDefault;
 import io.smallrye.config.WithName;
 
-@ConfigMapping(prefix = "blue-green")
+@ConfigMapping(prefix = "quarkus.blue-green")
 @ConfigRoot(phase = ConfigPhase.BUILD_TIME)
 public interface BlueGreenBuildTimeConfig {
 
